@@ -1,0 +1,14 @@
+# Ignore Mac files
+
+.DS_Store
+
+# Ignore rubymine files
+/.idea/
+/.idea/vcs.xml
+.idea
+.idea/
+.idea/workspace.xml
+
+.xcuserdatad
+.xcuserdatad/
+.xcuserdatad/UserInterfaceState.xcuserstate

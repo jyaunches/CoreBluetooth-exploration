@@ -22,6 +22,7 @@
 		701EB9661842C8F70056D83B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB9451842C8F70056D83B /* UIKit.framework */; };
 		701EB96E1842C8F70056D83B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 701EB96C1842C8F70056D83B /* InfoPlist.strings */; };
 		701EB9701842C8F70056D83B /* goTenna_freeformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB96F1842C8F70056D83B /* goTenna_freeformTests.m */; };
+		701EB97C1843FAC90056D83B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB97B1843FAC90056D83B /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		701EB96B1842C8F70056D83B /* goTenna-freeformTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "goTenna-freeformTests-Info.plist"; sourceTree = "<group>"; };
 		701EB96D1842C8F70056D83B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		701EB96F1842C8F70056D83B /* goTenna_freeformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goTenna_freeformTests.m; sourceTree = "<group>"; };
+		701EB97B1843FAC90056D83B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701EB97C1843FAC90056D83B /* CoreBluetooth.framework in Frameworks */,
 				701EB9441842C8F70056D83B /* CoreGraphics.framework in Frameworks */,
 				701EB9461842C8F70056D83B /* UIKit.framework in Frameworks */,
 				701EB9421842C8F70056D83B /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		701EB9401842C8F70056D83B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				701EB97B1843FAC90056D83B /* CoreBluetooth.framework */,
 				701EB9411842C8F70056D83B /* Foundation.framework */,
 				701EB9431842C8F70056D83B /* CoreGraphics.framework */,
 				701EB9451842C8F70056D83B /* UIKit.framework */,
@@ -202,6 +206,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Julietta Yaunches";
 				TargetAttributes = {
+					701EB93D1842C8F70056D83B = {
+						DevelopmentTeam = T34EE4GLT2;
+					};
 					701EB9611842C8F70056D83B = {
 						TestTargetID = 701EB93D1842C8F70056D83B;
 					};
@@ -392,10 +399,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "goTenna-freeform/goTenna-freeform-Prefix.pch";
 				INFOPLIST_FILE = "goTenna-freeform/goTenna-freeform-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "goTenna-freeform/goTenna-freeform-Prefix.pch";
 				INFOPLIST_FILE = "goTenna-freeform/goTenna-freeform-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +487,7 @@
 				701EB9751842C8F70056D83B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		701EB9761842C8F70056D83B /* Build configuration list for PBXNativeTarget "goTenna-freeformTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +496,7 @@
 				701EB9781842C8F70056D83B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
