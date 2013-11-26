@@ -14,7 +14,6 @@
 		701EB94E1842C8F70056D83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB94D1842C8F70056D83B /* main.m */; };
 		701EB9521842C8F70056D83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB9511842C8F70056D83B /* AppDelegate.m */; };
 		701EB9551842C8F70056D83B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701EB9531842C8F70056D83B /* Main_iPhone.storyboard */; };
-		701EB9581842C8F70056D83B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701EB9561842C8F70056D83B /* Main_iPad.storyboard */; };
 		701EB95B1842C8F70056D83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB95A1842C8F70056D83B /* ViewController.m */; };
 		701EB95D1842C8F70056D83B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701EB95C1842C8F70056D83B /* Images.xcassets */; };
 		701EB9641842C8F70056D83B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB9631842C8F70056D83B /* XCTest.framework */; };
@@ -23,6 +22,7 @@
 		701EB96E1842C8F70056D83B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 701EB96C1842C8F70056D83B /* InfoPlist.strings */; };
 		701EB9701842C8F70056D83B /* goTenna_freeformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB96F1842C8F70056D83B /* goTenna_freeformTests.m */; };
 		701EB97C1843FAC90056D83B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB97B1843FAC90056D83B /* CoreBluetooth.framework */; };
+		701EB97F1844067C0056D83B /* NearbyPeripheralsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		701EB9501842C8F70056D83B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		701EB9511842C8F70056D83B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		701EB9541842C8F70056D83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		701EB9571842C8F70056D83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		701EB9591842C8F70056D83B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		701EB95A1842C8F70056D83B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		701EB95C1842C8F70056D83B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -57,6 +56,8 @@
 		701EB96D1842C8F70056D83B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		701EB96F1842C8F70056D83B /* goTenna_freeformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goTenna_freeformTests.m; sourceTree = "<group>"; };
 		701EB97B1843FAC90056D83B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		701EB97D1844067C0056D83B /* NearbyPeripheralsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyPeripheralsVC.h; sourceTree = "<group>"; };
+		701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyPeripheralsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +122,12 @@
 				701EB9501842C8F70056D83B /* AppDelegate.h */,
 				701EB9511842C8F70056D83B /* AppDelegate.m */,
 				701EB9531842C8F70056D83B /* Main_iPhone.storyboard */,
-				701EB9561842C8F70056D83B /* Main_iPad.storyboard */,
 				701EB9591842C8F70056D83B /* ViewController.h */,
 				701EB95A1842C8F70056D83B /* ViewController.m */,
 				701EB95C1842C8F70056D83B /* Images.xcassets */,
 				701EB9481842C8F70056D83B /* Supporting Files */,
+				701EB97D1844067C0056D83B /* NearbyPeripheralsVC.h */,
+				701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */,
 			);
 			path = "goTenna-freeform";
 			sourceTree = "<group>";
@@ -210,7 +212,7 @@
 						DevelopmentTeam = T34EE4GLT2;
 					};
 					701EB9611842C8F70056D83B = {
-						TestTargetID = 701EB93D1842C8F70056D83B;
+						TestTargetID = 701EB93D1842C8F70056D83B /* goTenna-freeform */;
 					};
 				};
 			};
@@ -238,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				701EB9581842C8F70056D83B /* Main_iPad.storyboard in Resources */,
 				701EB95D1842C8F70056D83B /* Images.xcassets in Resources */,
 				701EB9551842C8F70056D83B /* Main_iPhone.storyboard in Resources */,
 				701EB94C1842C8F70056D83B /* InfoPlist.strings in Resources */,
@@ -261,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				701EB95B1842C8F70056D83B /* ViewController.m in Sources */,
+				701EB97F1844067C0056D83B /* NearbyPeripheralsVC.m in Sources */,
 				701EB9521842C8F70056D83B /* AppDelegate.m in Sources */,
 				701EB94E1842C8F70056D83B /* main.m in Sources */,
 			);
@@ -299,14 +301,6 @@
 				701EB9541842C8F70056D83B /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		701EB9561842C8F70056D83B /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				701EB9571842C8F70056D83B /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		701EB96C1842C8F70056D83B /* InfoPlist.strings */ = {
@@ -406,6 +400,7 @@
 				INFOPLIST_FILE = "goTenna-freeform/goTenna-freeform-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,6 +417,7 @@
 				INFOPLIST_FILE = "goTenna-freeform/goTenna-freeform-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
