@@ -14,7 +14,6 @@
 		701EB94E1842C8F70056D83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB94D1842C8F70056D83B /* main.m */; };
 		701EB9521842C8F70056D83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB9511842C8F70056D83B /* AppDelegate.m */; };
 		701EB9551842C8F70056D83B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701EB9531842C8F70056D83B /* Main_iPhone.storyboard */; };
-		701EB95B1842C8F70056D83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB95A1842C8F70056D83B /* ViewController.m */; };
 		701EB95D1842C8F70056D83B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701EB95C1842C8F70056D83B /* Images.xcassets */; };
 		701EB9641842C8F70056D83B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB9631842C8F70056D83B /* XCTest.framework */; };
 		701EB9651842C8F70056D83B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB9411842C8F70056D83B /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		701EB9701842C8F70056D83B /* goTenna_freeformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB96F1842C8F70056D83B /* goTenna_freeformTests.m */; };
 		701EB97C1843FAC90056D83B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701EB97B1843FAC90056D83B /* CoreBluetooth.framework */; };
 		701EB97F1844067C0056D83B /* NearbyPeripheralsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */; };
+		70C97DC61845761000FB1FE7 /* AdvertiseAsPeripheralVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C97DC51845761000FB1FE7 /* AdvertiseAsPeripheralVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		701EB9501842C8F70056D83B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		701EB9511842C8F70056D83B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		701EB9541842C8F70056D83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		701EB9591842C8F70056D83B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		701EB95A1842C8F70056D83B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		701EB95C1842C8F70056D83B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		701EB9621842C8F70056D83B /* goTenna-freeformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "goTenna-freeformTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701EB9631842C8F70056D83B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,6 +56,8 @@
 		701EB97B1843FAC90056D83B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		701EB97D1844067C0056D83B /* NearbyPeripheralsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyPeripheralsVC.h; sourceTree = "<group>"; };
 		701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyPeripheralsVC.m; sourceTree = "<group>"; };
+		70C97DC41845761000FB1FE7 /* AdvertiseAsPeripheralVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseAsPeripheralVC.h; sourceTree = "<group>"; };
+		70C97DC51845761000FB1FE7 /* AdvertiseAsPeripheralVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseAsPeripheralVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +122,12 @@
 				701EB9501842C8F70056D83B /* AppDelegate.h */,
 				701EB9511842C8F70056D83B /* AppDelegate.m */,
 				701EB9531842C8F70056D83B /* Main_iPhone.storyboard */,
-				701EB9591842C8F70056D83B /* ViewController.h */,
-				701EB95A1842C8F70056D83B /* ViewController.m */,
 				701EB95C1842C8F70056D83B /* Images.xcassets */,
 				701EB9481842C8F70056D83B /* Supporting Files */,
 				701EB97D1844067C0056D83B /* NearbyPeripheralsVC.h */,
 				701EB97E1844067C0056D83B /* NearbyPeripheralsVC.m */,
+				70C97DC41845761000FB1FE7 /* AdvertiseAsPeripheralVC.h */,
+				70C97DC51845761000FB1FE7 /* AdvertiseAsPeripheralVC.m */,
 			);
 			path = "goTenna-freeform";
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				701EB95B1842C8F70056D83B /* ViewController.m in Sources */,
 				701EB97F1844067C0056D83B /* NearbyPeripheralsVC.m in Sources */,
+				70C97DC61845761000FB1FE7 /* AdvertiseAsPeripheralVC.m in Sources */,
 				701EB9521842C8F70056D83B /* AppDelegate.m in Sources */,
 				701EB94E1842C8F70056D83B /* main.m in Sources */,
 			);
